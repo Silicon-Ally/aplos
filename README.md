@@ -15,6 +15,7 @@ The covered API surface is currently quite minimal&mdash;if there's API endpoint
 import "github.com/Silicon-Ally/aplos"
 
 ...
+```
 
 See [the `examples/` directory](/examples) for examples of using the API client.
 
