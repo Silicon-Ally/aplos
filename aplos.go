@@ -9,9 +9,9 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"net/http"
 	"net/url"
+	"os"
 	"strconv"
 	"time"
 
@@ -26,7 +26,7 @@ func LoadPrivateKeyFromFile(fp string) (*rsa.PrivateKey, error) {
 	// One could use os.Open + base64.NewDecoder to stream the file, but for a key
 	// file, which is a fixed size, there's no harm in just loading the whole thing
 	// into memory straight away.
-	b64EncDat, err := ioutil.ReadFile(fp)
+	b64EncDat, err := os.ReadFile(fp)
 	if err != nil {
 		return nil, fmt.Errorf("failed to read key file: %w", err)
 	}
