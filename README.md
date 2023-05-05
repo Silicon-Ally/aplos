@@ -1,6 +1,8 @@
 # Aplos API Client
 
 [![GoDoc](https://pkg.go.dev/badge/github.com/Silicon-Ally/aplos?status.svg)](https://pkg.go.dev/github.com/Silicon-Ally/aplos?tab=doc)
+[![CI Workflow](https://github.com/Silicon-Ally/aplos/actions/workflows/test.yml/badge.svg)](https://github.com/Silicon-Ally/aplos/actions?query=branch%3Amain)
+
 
 Note: This is a pre-v1.0.0 library, expect the API surface to change.
 
